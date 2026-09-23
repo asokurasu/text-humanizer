@@ -3,8 +3,8 @@ from __future__ import annotations
 import subprocess
 import random
 import string
-import argparse 
-import sys 
+import argparse
+import sys
 from pathlib import Path
 from src.services import humanizer
 
