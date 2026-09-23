@@ -1,0 +1,31 @@
+version: "3.9"  
+
+services:
+  humanize-text:
+    build: .
+    container_name: humanize-text
+    restart: unless-stopped
+
+    environment:
+      - PYTHONUNBUFFERED=1
+
+    volumes:
+      - .:/app
+      - ./config.toml:/app/config.toml
+
+    working_dir: /app
+
+    command: python main.py
+
+  # optional: local LLM runner (if you use Ollama)
+  ollama:
+    image: ollama/ollama:latest
+    container_name: ollama
+    restart: unless-stopped
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama_data:/root/.ollama
+
+volumes:
+  ollama_data:
