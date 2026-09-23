@@ -1,4 +1,4 @@
-# text-humanizer
+<img width="1087" height="280" alt="image" src="https://github.com/user-attachments/assets/6d2fc6bd-a001-4753-b4d3-1b4875a10d8f" /># text-humanizer
 
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg) ![Python](https://img.shields.io/badge/python-3.6%2B-blue)
 
@@ -39,7 +39,7 @@ text-Humanizer 是一个完全免费且开源的项目，旨在通过基于大�
 # 快速开始（Windows / Linux / macOS）
 
 ```bash
-git clone https://github.com/korcarc/text-humanizer.git
+git clone https://github.com/asokurasu/text-humanizer.git
 cd text-humanizer
 pip install -r requirements.txt
 copy .\config\config.example.toml .\config.toml # 创建配置文件
